@@ -8,9 +8,6 @@
       <v-dialog max-width="600px" v-model="dialog">
         <v-btn flat slot="activator" class="success" left>Add New Activity</v-btn>
         <v-card>
-          <v-card-title>
-            <h2>Add a New Activity</h2>
-          </v-card-title>
           <v-card-text>
             <v-form ref="form" class="px-3">
               <v-text-field v-model="activities.name" label="Name" prepend-icon="folder"></v-text-field>
@@ -18,7 +15,7 @@
               <v-textarea v-model="activities.content" label="Content" prepend-icon="edit"></v-textarea>
               <v-text-field v-model="activities.category" label="Category" prepend-icon="folder"></v-text-field>
               <v-spacer></v-spacer>
-              <v-btn flat @click="submit" class="success mx-0 mt-3" :loading="loading">Add Activity</v-btn>
+              <v-btn flat @click="submit" class="success mx-0 mt-3" :loading="loading">Submit</v-btn>
             </v-form>
           </v-card-text>
         </v-card>
